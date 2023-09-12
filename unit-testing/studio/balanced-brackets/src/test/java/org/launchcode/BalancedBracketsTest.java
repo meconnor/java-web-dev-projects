@@ -84,4 +84,11 @@ class BalancedBracketsTest {
         assertTrue(BalancedBrackets.hasBalancedBrackets("{[Launch]Code}"));
         assertTrue(BalancedBrackets.hasBalancedBrackets("{[Launch]Code"));
     }
+
+    @Test
+    public void testNullString() {
+        assertFalse(BalancedBrackets.hasBalancedBrackets(null));
+    }
+
+    
 }
